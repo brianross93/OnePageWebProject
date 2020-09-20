@@ -21,38 +21,116 @@
       padding: 1em;
     }
     #nav {
-      background-color: forestgreen;
+      background-color: rgb(106, 160, 61);
       display: flex;
       justify-content: space-between;
       align-items: baseline;
     }
     #banner {
-      background-color: greenyellow;
+      background-color: black;
+      background-image: url(amazonrainforest.jpg);
     }
 
     #ForestIntro{
       background-color: grey;
       background-image: url(forests-why-matter_63516847.jpg);
       background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      color: rgba(246, 247, 250, 0.979);
     }
+    #ForestIntro h2, #ForestIntro p {
+      margin: 1em;
+	    text-shadow: 0 20px 40px #000000;
+    }
+
     #ForestIssue {
+      background-color: firebrick;
+      background-image: url(biodiversityimage.png);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      color: rgba(246, 247, 250, 0.979);
 
     }
-    #Corridors {
 
+    #ForestIssue h2, #ForestIssue p {
+      margin: 1em;
+	    text-shadow: 0 20px 40px #000000;
+    }
+
+    #Corridors {
+      background-color: goldenrod;
+      background-image: url(Screen\ Shot\ 2020-09-14\ at\ 10.58.44\ PM.png);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      color: rgba(246, 247, 250, 0.979);
+      
+    }
+
+    #Corridors p {
+      margin: 2em;
+    }
+
+    #TargetForests {
+      background-color: forestgreen
+    }
+
+    #TargetForests ul {
+      list-style: none;
+      margin: 0;
+    	padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    #TargetForests h2 {
+      display: flex;
+      justify-content: center; 
+      align-content: center;
+      text-shadow: 0 20px 40px #000000;
+    }
+
+    .card {
+      width: 400px;
+      margin: 1em;
+      background-color: whitesmoke;
+    }
+    .card img {
+      width: 100%;
+      margin: none;
     }
     #contact {
-      
+      background-color: rgb(15, 83, 104);
     }
   </style>
 </head>
 <body>
   <main>
-    <nav id="nav"></nav>
+    <nav id="nav">
+      <h1><a href="#">Reforest the Earth</a></h1>
+				<ul>
+					<li><a href="#Overview">Overview</a></li>
+					<li><a href="#ForestIssue">About</a></li>
+					<li><a href="#Corridors">How</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+    </nav>
     <section id="banner">
-
+      <h1>Reforest the Earth!</h1>
     </section>
     <section id="ForestIntro">
+      <div>
       <h2>Why are trees important?</h2>
 
       <p>Trees are one of the most vital lifeforms on our planet. They allow for thriving 
@@ -60,15 +138,87 @@
         the Earth's surface, they contain 50% of species on Earth. Through proper land management
         forests can be brought back to life. Here are some factors to consider when doing so. 
       </p>
+    </div>
     </section>
     <section id="ForestIssue">
-
+      <div>
+        <h2>Where should be plant our trees?</h2>
+      <p>Planting tress in the center of an already existing forest is the best 
+        use of tree planting efforts. But not just any tree can be planted. There has
+        to be a wide diversity of trees that are native to the region. This will ensure that 
+        the trees will be able to handle whatever local environmental conditions there are 
+        throughout the year. 
+      </p>
+    </div>
     </section>
     <section id="Corridors">
+      <div>
+      <p>A corridor can revive an entire forest system by opening up pathways for the hunting
+        migratory cycle. 
+        <br>
+        When a forest gets cut in half,
+        like with a wall or a road, this can interrupt the forest ecology tremendously. 
+        Apex predators, like wolves, may rely on a certain migration pattern of hunting spots. 
+        If a road cuts through this hunting pattern, the entire food supply is cut in half. 
+        This leads to the pack of wolves being unable to sustain enough numbers to effectively hunt.
+        Overpopulation of deer then result in tree saplings being eaten before being able to 
+        become a tree. The grass grows tall enough that it restricts sunlight from reaching the 
+        bottom of the forest floor, which leads to the death of the forest and conversion
+        to a grassland.        
+      </p>
+    </div>
+    </section>
+
+    <section id="TargetForests">
+      <h2> Which forests should we target?</h2>
+      <ul>
+        <li class="card">
+          <img src="amazonrainforest.jpg">
+          <h3>Amazon Rainforest</h3>
+          <p>The largest rainforest on Earth and home to half of all
+            species on Earth.
+          </p>
+        </li>
+
+        <li class="card">
+          <img src = "atlanticrainforest.jpg">
+          <h3> Atlantic Rainforest</h3>
+          <p>The Amazon's neighbor in Brazil, this forest has been devastated 
+            as population growth has wiped out most of the forest on Brazil's Atlantic Coast. 
+          </p> 
+        </li>
+
+        <li class="card">
+          <img src = "seasiaforest.jpg">
+          <h3>Southeast Asian Rainforest</h3>
+          <p>Previously the largest contiguous forest on Earth, this forest has been
+            destroyed by human growth and activity. Most of the forest is now seperated into patches,
+            and building corridors in this area would help greatly.
+          </p>
+        </li>
+      </ul>
+
 
     </section>
     <footer id="contact">
-
+      <form>
+        <label>
+          Name
+          <input type="text">
+        </label>
+  
+        <label>
+          Email
+          <input type="email">
+        </label>
+  
+        <label>
+          Message
+          <textarea></textarea>
+        </label>
+  
+        <button type="submit">Send</button>
+      </form>
     </footer>
   </main>
 </body>
